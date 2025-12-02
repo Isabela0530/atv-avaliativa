@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Pedidos</title>
+</head>
+<body>
+
+<header>
+    <h1>Pedidos Realizados</h1>
+</header>
+
+<nav>
+    <a href="produtos.html">Produtos</a>
+    <a href="alunos.html">Alunos</a>
+    <a href="pedidos.html">Pedidos</a>
+</nav>
+
+<section>
+    <h2>Cadastrar Pedido</h2>
+
+    <form>
+        <label>ID:</label>
+        <input type="text" required>
+
+        <label>Data:</label>
+        <input type="date" required>
+
+        <label>Aluno:</label>
+        <select required>
+            <option value="">Selecione...</option>
+            <option>João Silva</option>
+            <option>Maria Oliveira</option>
+            <option>Carlos Souza</option>
+        </select>
+
+        <label>Produto:</label>
+        <select required>
+            <option value="">Selecione...</option>
+            <option>Coxinha</option>
+            <option>Pão de Queijo</option>
+            <option>Suco de Uva</option>
+        </select>
+
+        <label>Quantidade:</label>
+        <input type="number" min="1" required>
+
+        <button type="submit">Registrar</button>
+    </form>
+</section>
+
+<section>
+    <h2>Pedidos Feitos</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Data</th>
+                <th>Aluno</th>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>301</td>
+                <td>2025-02-01</td>
+                <td>João Silva</td>
+                <td>Coxinha</td>
+                <td>2</td>
+                <td>R$ 10,00</td>
+            </tr>
+            <tr>
+                <td>302</td>
+                <td>2025-02-01</td>
+                <td>Maria Oliveira</td>
+                <td>Suco de Uva</td>
+                <td>1</td>
+                <td>R$ 6,00</td>
+            </tr>
+            <tr>
+                <td>303</td>
+                <td>2025-02-02</td>
+                <td>Carlos Souza</td>
+                <td>Pão de Queijo</td>
+                <td>3</td>
+                <td>R$ 12,00</td>
+            </tr>
+        </tbody>
+    </table>
+
+</section>
+
+</body>
+</html>

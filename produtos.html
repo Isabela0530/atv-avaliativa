@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Produtos</title>
+</head>
+<body>
+
+<header>
+    <h1>Produtos da Cantina</h1>
+</header>
+
+<nav>
+    <a href="produtos.html">Produtos</a>
+    <a href="alunos.html">Alunos</a>
+    <a href="pedidos.html">Pedidos</a>
+</nav>
+
+<section>
+    <h2>Cadastrar Produto</h2>
+
+    <form>
+        <label>ID:</label>
+        <input type="text" required>
+
+        <label>Nome:</label>
+        <input type="text" required>
+
+        <label>Valor:</label>
+        <input type="number" min="0.01" step="0.01" required>
+
+        <button type="submit">Salvar</button>
+    </form>
+</section>
+
+<section>
+    <h2>Produtos Cadastrados</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Valor</th>
+                <th>Total de Vendas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Coxinha</td>
+                <td>5,00</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Pão de Queijo</td>
+                <td>4,00</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Suco de Uva</td>
+                <td>6,00</td>
+                <td>14</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+</body>
+</html>
